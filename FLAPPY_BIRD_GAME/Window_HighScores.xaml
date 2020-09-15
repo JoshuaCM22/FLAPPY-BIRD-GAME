@@ -1,0 +1,20 @@
+﻿<Window x:Class="FLAPPY_BIRD_GAME.Window_HighScores"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FLAPPY_BIRD_GAME"
+        mc:Ignorable="d"
+        Closed="OnClosing"
+          Title="FLAPPY BIRD GAME"  Height="560" Width="525" ResizeMode="CanMinimize">
+    <Canvas Name="MyCanvas" Focusable="True" Background="LightBlue">
+
+        <Label FontSize="30" Name="lblTitle" Content="HIGH SCORES" Foreground="Black" FontWeight="Bold" Canvas.Top="13" Canvas.Left="150" Height="112" />
+        <Label FontSize="23" Name="lblTop10Only" Content="Top 10 only" Foreground="Green" FontWeight="Bold" Canvas.Top="63" Canvas.Left="193" Height="112" />
+        <Label FontSize="20" Name="lblRankHeaderAndContent"  Content="Rank" Foreground="Black" FontWeight="Normal" Canvas.Top="110" Canvas.Left="60" Height="315" />
+        <Label FontSize="20" Name="lblDateHeaderAndContent" Content="     Date" Foreground="Black" FontWeight="Normal" Canvas.Top="110" Canvas.Left="193" Height="315" />
+        <Label FontSize="20" Name="lblScoreHeaderAndContent" Content="Score" Foreground="Black" FontWeight="Normal" Canvas.Top="110" Canvas.Left="382" Height="315" />
+        <Button Name="btnBack" Content="BACK" FontSize="16" FontWeight="Bold"  Click="btnBack_Click" Canvas.Left="20" Canvas.Top="455" Height="48" Width="130" Cursor="Hand" RenderTransformOrigin="0,0.479"/>
+
+    </Canvas>
+</Window>

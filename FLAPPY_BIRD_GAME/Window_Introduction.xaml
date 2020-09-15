@@ -1,0 +1,21 @@
+﻿<Window x:Class="FLAPPY_BIRD_GAME.Window_Introduction"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FLAPPY_BIRD_GAME"
+        mc:Ignorable="d"
+        Closed="OnClosing"
+        Title="FLAPPY BIRD GAME"  Height="560" Width="525" ResizeMode="CanMinimize">
+    <Canvas Name="MyCanvas" Focusable="True" Background="LightBlue">
+        <Label FontSize="40" Name="lblTitle" Content="FLAPPY BIRD GAME" Foreground="Black" FontWeight="ExtraBold" Canvas.Top="19" Canvas.Left="53" />
+        <Image Source="/Images/flappyBird.png" Width="100" Height="80" Canvas.Left="193" Canvas.Top="99" />
+        <Label FontSize="20" Name="lblInstructions" Content="Instructions: Avoid to overfly and fallen down. &#10;Also avoid to collide in any tunnels as long as&#10;you can." Foreground="Black" FontWeight="Normal" Canvas.Top="201" Canvas.Left="53" Height="112" />
+        <Label FontSize="20" Name="lblControls" Content="Control: Use the space bar to control the bird." Foreground="Black" FontWeight="Normal" Canvas.Top="299" Canvas.Left="53" Height="112" />
+        <Button Name="btnPlay" Content="PLAY" FontSize="16" FontWeight="Bold"  Click="btnPlay_Click" Canvas.Left="156" Canvas.Top="375" Height="48" Width="193" Cursor="Hand"/>
+        <Button Name="btnAudio" Width="50" Height="50" Click="btnAudio_Click" Background="Transparent" Cursor="Hand" Canvas.Left="460" Canvas.Top="470">
+            <Image Source="pack://application:,,,/Images/unmuted.png"/>
+        </Button>
+        <Button Name="btnHighScores" Content="HIGH SCORES" Click="btnHighScores_Click" FontSize="16" FontWeight="Bold"  Canvas.Left="156" Canvas.Top="437" Height="48" Width="193" Cursor="Hand"/>
+    </Canvas>
+</Window>
